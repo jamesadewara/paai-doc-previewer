@@ -1,7 +1,7 @@
 {
   "name": "paai-doc-previewer",
   "displayName": "Paai Doc Previewer",
-  "description": "It preveiws PAAI json docs as web components",
+  "description": "Paai Doc Previewer is a VS Code extension that allows you to preview JSON documents as HTML while maintaining the VS Code theme structure. It converts JSON keys into basic HTML elements and provides a preview directly within VS Code.",
   "version": "0.0.1",
   "extensionKind": [
     "workspace"

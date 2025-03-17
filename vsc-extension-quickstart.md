@@ -14,17 +14,34 @@ Ensure your JSON document follows this structure for correct rendering:
 
 ```json
 {
-  "heading1": "Main Title",
-  "paragraph": "This is a sample paragraph.",
-  "link": { "text": "Visit Site", "href": "https://example.com" },
+  "heading1": "Welcome to JSON Preview",
+  "paragraph": "This is a simple JSON-based HTML previewer.",
+  "link": {
+    "href": "https://example.com",
+    "text": "Click Here"
+  },
+  "image": {
+    "src": "https://imgs.search.brave.com/PXpxOBAqfj0C5M22XXwFR5rbBpz_YzHt1C7E2ym0bnM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTA3/NjA1MTAyL3Bob3Rv/L2hhbmRzb21lLW1h/bi5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9eXVTcnJZMi1T/ZkRGVDNUNFlrRG16/cUE3WThJeTFfSHhT/emFnWnFtc2JwMD0",
+    "alt": "Sample Image",
+    "width": "300px",
+    "height": "auto"
+  },
   "children": [
-    { "heading2": "Subheading" },
-    { "paragraph": "Additional description." },
-    { "ul": [
-        { "li": "Item 1" },
-        { "li": "Item 2" },
-        { "li": { "link": { "text": "Google", "href": "https://google.com" } } }
-    ]}
+    {
+      "heading2": "Features"
+    },
+    {
+      "paragraph": "Supports various HTML elements based on JSON keys."
+    },
+    {
+      "ul": [
+        "Headings (h1-h6)",
+        "Paragraphs",
+        "Links",
+        "Lists",
+        "Images"
+      ]
+    }
   ]
 }
 ```
