@@ -80,7 +80,7 @@ function convertJsonToHtml(jsonData: any): string {
   }
 
   if (Array.isArray(jsonData)) {
-    return `<ul>${jsonData.map(item => `<li>${convertJsonToHtml(item)}</li>`).join('')}</ul>`;
+    return jsonData.map(item => convertJsonToHtml(item)).join('');
   }
 
   if (jsonData && typeof jsonData === 'object') {
@@ -100,6 +100,9 @@ function convertJsonToHtml(jsonData: any): string {
       }
       if (key === 'children' && Array.isArray(value)) {
         return `<div class="children">${convertJsonToHtml(value)}</div>`;
+      }
+      if (Array.isArray(value)) {
+        return value.map(item => `<div>${convertJsonToHtml(item)}</div>`).join('');
       }
       return `<div>${escapeHtml(key)}: ${convertJsonToHtml(value)}</div>`;
     }).join('');
