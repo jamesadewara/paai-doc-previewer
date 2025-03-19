@@ -48,7 +48,7 @@ This JSON will be rendered as:
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/paai-doc-previewer.git
+   git clone https://github.com/jamesadewara/paai-doc-previewer
    cd paai-doc-previewer
    ```
 2. Install dependencies:
